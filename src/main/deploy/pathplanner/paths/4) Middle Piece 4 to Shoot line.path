@@ -1,0 +1,70 @@
+{
+  "version": 1.0,
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 8.429653627283534,
+        "y": 2.510677341591895
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 7.3383966486242835,
+        "y": 3.3934919760128626
+      },
+      "isLocked": false,
+      "linkedName": "middle_4"
+    },
+    {
+      "anchor": {
+        "x": 4.199500170683069,
+        "y": 4.785151156662581
+      },
+      "prevControl": {
+        "x": 5.499199493580604,
+        "y": 4.239522667332955
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": "shoot_under_stage"
+    }
+  ],
+  "rotationTargets": [],
+  "constraintZones": [],
+  "eventMarkers": [
+    {
+      "name": "Intake OFF",
+      "waypointRelativePos": 0.0,
+      "command": {
+        "type": "parallel",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "Intake Off"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "globalConstraints": {
+    "maxVelocity": 4.0,
+    "maxAcceleration": 5.0,
+    "maxAngularVelocity": 540.0,
+    "maxAngularAcceleration": 720.0
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": 172.95057014555732,
+    "rotateFast": false
+  },
+  "reversed": false,
+  "folder": "Source 0-3",
+  "previewStartingState": {
+    "rotation": -176.82776429933017,
+    "velocity": 0
+  },
+  "useDefaultConstraints": false
+}

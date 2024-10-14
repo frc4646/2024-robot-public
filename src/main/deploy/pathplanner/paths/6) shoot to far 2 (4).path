@@ -1,0 +1,82 @@
+{
+  "version": 1.0,
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 5.45,
+        "y": 6.3
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 6.565753113759999,
+        "y": 6.504792991839755
+      },
+      "isLocked": false,
+      "linkedName": null
+    },
+    {
+      "anchor": {
+        "x": 8.22655132444249,
+        "y": 5.696246494533805
+      },
+      "prevControl": {
+        "x": 7.170341936069853,
+        "y": 6.395529951663276
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": "outside2finale"
+    }
+  ],
+  "rotationTargets": [],
+  "constraintZones": [
+    {
+      "name": "pick up",
+      "minWaypointRelativePos": 0.75,
+      "maxWaypointRelativePos": 1.0,
+      "constraints": {
+        "maxVelocity": 2.0,
+        "maxAcceleration": 5.0,
+        "maxAngularVelocity": 540.0,
+        "maxAngularAcceleration": 720.0
+      }
+    }
+  ],
+  "eventMarkers": [
+    {
+      "name": "Intake sixth piece",
+      "waypointRelativePos": 0.85,
+      "command": {
+        "type": "parallel",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "intake and stage"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "globalConstraints": {
+    "maxVelocity": 4.0,
+    "maxAcceleration": 5.0,
+    "maxAngularVelocity": 540.0,
+    "maxAngularAcceleration": 720.0
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": 149.68878677331833,
+    "rotateFast": false
+  },
+  "reversed": false,
+  "folder": "Cool Auto 3-2",
+  "previewStartingState": {
+    "rotation": -170.07375449334833,
+    "velocity": 0
+  },
+  "useDefaultConstraints": false
+}

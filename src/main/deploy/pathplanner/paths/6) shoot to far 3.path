@@ -1,0 +1,82 @@
+{
+  "version": 1.0,
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 5.45,
+        "y": 6.29
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 6.806131802148253,
+        "y": 6.33725633023582
+      },
+      "isLocked": false,
+      "linkedName": null
+    },
+    {
+      "anchor": {
+        "x": 8.299393351226808,
+        "y": 4.064585094565043
+      },
+      "prevControl": {
+        "x": 7.4809644221405165,
+        "y": 5.741127499878639
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": "outside3finale"
+    }
+  ],
+  "rotationTargets": [],
+  "constraintZones": [
+    {
+      "name": "pick up",
+      "minWaypointRelativePos": 0.85,
+      "maxWaypointRelativePos": 1.0,
+      "constraints": {
+        "maxVelocity": 2.0,
+        "maxAcceleration": 5.0,
+        "maxAngularVelocity": 540.0,
+        "maxAngularAcceleration": 720.0
+      }
+    }
+  ],
+  "eventMarkers": [
+    {
+      "name": "Intake",
+      "waypointRelativePos": 0.9,
+      "command": {
+        "type": "parallel",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "intake and stage"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "globalConstraints": {
+    "maxVelocity": 4.5,
+    "maxAcceleration": 5.0,
+    "maxAngularVelocity": 540.0,
+    "maxAngularAcceleration": 720.0
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": 112.52056560289671,
+    "rotateFast": false
+  },
+  "reversed": false,
+  "folder": "Grab Middle 1-5",
+  "previewStartingState": {
+    "rotation": -175.13884054390508,
+    "velocity": 0
+  },
+  "useDefaultConstraints": false
+}

@@ -1,0 +1,70 @@
+{
+  "version": 1.0,
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 1.3211271852889754,
+        "y": 6.555782410588779
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 1.7873161567086222,
+        "y": 6.657761248086827
+      },
+      "isLocked": false,
+      "linkedName": null
+    },
+    {
+      "anchor": {
+        "x": 2.7633993156185066,
+        "y": 6.898139936475082
+      },
+      "prevControl": {
+        "x": 2.1101823229915215,
+        "y": 6.642686125814711
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": "inside1finale"
+    }
+  ],
+  "rotationTargets": [],
+  "constraintZones": [],
+  "eventMarkers": [
+    {
+      "name": "Intake",
+      "waypointRelativePos": 0.7,
+      "command": {
+        "type": "parallel",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "intake and stage"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "globalConstraints": {
+    "maxVelocity": 4.0,
+    "maxAcceleration": 4.0,
+    "maxAngularVelocity": 540.0,
+    "maxAngularAcceleration": 720.0
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": -148.0918930643468,
+    "rotateFast": false
+  },
+  "reversed": false,
+  "folder": "Grab Middle 1-5",
+  "previewStartingState": {
+    "rotation": 180.0,
+    "velocity": 0
+  },
+  "useDefaultConstraints": false
+}

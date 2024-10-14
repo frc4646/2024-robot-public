@@ -1,0 +1,70 @@
+{
+  "version": 1.0,
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 2.62,
+        "y": 4.24
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 1.7736109406380305,
+        "y": 4.578184498125873
+      },
+      "isLocked": false,
+      "linkedName": null
+    },
+    {
+      "anchor": {
+        "x": 2.8999600856344565,
+        "y": 5.5479153815450495
+      },
+      "prevControl": {
+        "x": 1.8747265888498057,
+        "y": 5.49228881953771
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": null
+    }
+  ],
+  "rotationTargets": [],
+  "constraintZones": [],
+  "eventMarkers": [
+    {
+      "name": "intake",
+      "waypointRelativePos": 0.8,
+      "command": {
+        "type": "parallel",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "intake and stage"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "globalConstraints": {
+    "maxVelocity": 3.0,
+    "maxAcceleration": 2.5,
+    "maxAngularVelocity": 540.0,
+    "maxAngularAcceleration": 720.0
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": -172.9759254765155,
+    "rotateFast": false
+  },
+  "reversed": false,
+  "folder": "Cool Auto 3-2",
+  "previewStartingState": {
+    "rotation": 146.5495570076538,
+    "velocity": 0
+  },
+  "useDefaultConstraints": false
+}

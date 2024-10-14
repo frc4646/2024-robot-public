@@ -1,0 +1,70 @@
+{
+  "version": 1.0,
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 2.8999600856344565,
+        "y": 5.5479153815450495
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 1.7071899272458704,
+        "y": 5.761804318639693
+      },
+      "isLocked": false,
+      "linkedName": null
+    },
+    {
+      "anchor": {
+        "x": 2.7633993156185066,
+        "y": 6.898139936475082
+      },
+      "prevControl": {
+        "x": 1.9173686242984136,
+        "y": 6.793918764355939
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": "inside1finale"
+    }
+  ],
+  "rotationTargets": [],
+  "constraintZones": [],
+  "eventMarkers": [
+    {
+      "name": "Intake",
+      "waypointRelativePos": 0.8,
+      "command": {
+        "type": "parallel",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "intake and stage"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "globalConstraints": {
+    "maxVelocity": 3.0,
+    "maxAcceleration": 2.5,
+    "maxAngularVelocity": 540.0,
+    "maxAngularAcceleration": 720.0
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": -170.36246188706906,
+    "rotateFast": false
+  },
+  "reversed": false,
+  "folder": "Cool Auto 3-2",
+  "previewStartingState": {
+    "rotation": 180.0,
+    "velocity": 0
+  },
+  "useDefaultConstraints": false
+}

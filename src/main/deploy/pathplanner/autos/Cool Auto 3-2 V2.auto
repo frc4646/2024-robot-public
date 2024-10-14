@@ -1,0 +1,124 @@
+{
+  "version": 1.0,
+  "startingPose": {
+    "position": {
+      "x": 1.3575481986811355,
+      "y": 5.56513084632203
+    },
+    "rotation": 179.06253167279039
+  },
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "parallel",
+          "data": {
+            "commands": [
+              {
+                "type": "parallel",
+                "data": {
+                  "commands": [
+                    {
+                      "type": "named",
+                      "data": {
+                        "name": "RPM distance"
+                      }
+                    },
+                    {
+                      "type": "named",
+                      "data": {
+                        "name": "arm point at speeker"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "sequential",
+                "data": {
+                  "commands": [
+                    {
+                      "type": "named",
+                      "data": {
+                        "name": "auto shoot"
+                      }
+                    },
+                    {
+                      "type": "path",
+                      "data": {
+                        "pathName": "1) start to close 3 (4)"
+                      }
+                    },
+                    {
+                      "type": "named",
+                      "data": {
+                        "name": "auto shoot"
+                      }
+                    },
+                    {
+                      "type": "path",
+                      "data": {
+                        "pathName": "2) close 3 to close 2 (4)"
+                      }
+                    },
+                    {
+                      "type": "named",
+                      "data": {
+                        "name": "auto shoot"
+                      }
+                    },
+                    {
+                      "type": "path",
+                      "data": {
+                        "pathName": "3) close 2 to close 1 (4)"
+                      }
+                    },
+                    {
+                      "type": "named",
+                      "data": {
+                        "name": "auto shoot"
+                      }
+                    },
+                    {
+                      "type": "path",
+                      "data": {
+                        "pathName": "4b) close 1 to far 1 (4)"
+                      }
+                    },
+                    {
+                      "type": "path",
+                      "data": {
+                        "pathName": "5b) far 3 to shoot (4)"
+                      }
+                    },
+                    {
+                      "type": "named",
+                      "data": {
+                        "name": "auto shoot"
+                      }
+                    },
+                    {
+                      "type": "path",
+                      "data": {
+                        "pathName": "6b) shoot to far 2 (4)"
+                      }
+                    },
+                    {
+                      "type": "path",
+                      "data": {
+                        "pathName": "7b) far 2 to shoot (4)"
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "folder": null,
+  "choreoAuto": false
+}
